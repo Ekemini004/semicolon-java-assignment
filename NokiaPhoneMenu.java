@@ -6,10 +6,17 @@
 
     Scanner input = new Scanner(System.in);
 
+    boolean running = true;
+    
+    while(running){
+    
+
     String Menu = """ 
 
+    Welcome to Nokia 5510 main menu
+    Please enter a number, to select an option
     ════════════════════════════════
-           📱 PHONE MENU
+           MAIN PHONE MENU
     ════════════════════════════════
 
           1. Phone book
@@ -44,6 +51,11 @@
 
         case 1->{
 
+        boolean stayinPhonebook = true;
+
+        while(stayinPhonebook){
+        
+        
         String PhoneBookMenu = """ 
         
         You are now on the phone book
@@ -51,7 +63,7 @@
         to select an option.
 
         ════════════════════════════════
-               📱 PHONE BOOK MENU
+               PHONE BOOK MENU
         ════════════════════════════════
 
               1. Search
@@ -63,11 +75,11 @@
               7. Assign tone
               8. Send b'card
               9. Options
-
+              10. Back
         ════════════════════════════════
-
+        to go back, press 10
         """;  
-
+ 
         System.out.println(PhoneBookMenu);
 
                 
@@ -82,16 +94,18 @@
                      case 6-> System.out.println("You are now on the Copy menu");
                      case 7-> System.out.println("You are now on the Assign tone menu");
                      case 8-> System.out.println("You are now on the Send b'card menu");
-                     case 9-> System.out.println("do nested for this");
-                     case 10-> System.out.println("You are now on the Speed dials menu");
-                     case 11-> System.out.println("You are now on the Voice tags menu");
-                        
+                     case 9-> System.out.println("You are now on the OPtions menu");
+                     case 10-> stayinPhonebook = false;
                             }    
 
-    }                      
+    }   }                   
 
         case 2-> {
+        
+        boolean stayinMessageMenu = true;  
 
+        while(stayinMessageMenu){      
+        
         String messageMenu = """ 
         
         You are now on the Message Menu.
@@ -99,7 +113,7 @@
         to select an option.
 
         ════════════════════════════════
-              📱 MESSAGE MENU
+              MESSAGE MENU
         ════════════════════════════════
 
               1. Write Messages
@@ -111,6 +125,7 @@
               7. Show call costs
               8. Call cost settings
               9. Prepaid credit
+              10. Back
 
         ════════════════════════════════
             
@@ -130,6 +145,8 @@
                      case 5-> { System.out.println("You are now on the Erase recent call lists menu"); }
                      case 6 -> {
 
+
+
                             String showCallDuration = """ 
                             
                             You are now on the Show call duration Menu.
@@ -137,7 +154,7 @@
                             to select an option.
 
                             ════════════════════════════════
-                               📱 SHOW CALL DURATION MENU
+                               SHOW CALL DURATION MENU
                             ════════════════════════════════
 
                                   1. Last Call Duration
@@ -175,7 +192,7 @@
                             to select an option.
 
                             ════════════════════════════════
-                               📱 SHOW CALL COSTS MENU
+                               SHOW CALL COSTS MENU
                             ════════════════════════════════
 
                                   1. Last Call Cost
@@ -209,7 +226,7 @@
                             to select an option.
 
                             ════════════════════════════════
-                            📱 SHOW CALL COSTS SETTINGS MENU
+                             SHOW CALL COSTS SETTINGS MENU
                             ════════════════════════════════
 
                                   1. Last Call Cost
@@ -230,10 +247,14 @@
                                      case 1-> System.out.println("You are now on the Last Call cost limit menu");
                                      case 2-> System.out.println("You are now on show cost in menu");             
                                          }
-                                       }
+                                     }
         
+                                     
+                            case 9-> System.out.println("You are now on Prepaid cost menu");
 
-                                    }                       
+                            case 10-> stayinMessageMenu = false;      
+                          
+                                    }    }                   
 
             
       } 
@@ -249,7 +270,7 @@
                             to select an option.
 
                             ════════════════════════════════
-                            📱 SHOW CALL REGISTER MENU
+                                SHOW CALL REGISTER MENU
                             ════════════════════════════════
 
                                   1. Missed Calls
@@ -280,7 +301,7 @@
                             to select an option.
 
                             ════════════════════════════════
-                                  📱 SHOW TONES MENU
+                                    SHOW TONES MENU
                             ════════════════════════════════
 
                                   1. Ringing tone
@@ -314,7 +335,7 @@
                             to select an option.
 
                             ════════════════════════════════
-                                  📱 SETTINGS MENU
+                                    SETTINGS MENU
                             ════════════════════════════════
 
                                   1. Call Settings
@@ -342,7 +363,7 @@
                                             to select an option.
 
                                             ════════════════════════════════
-                                                  📱 CALL SETTINGS MENU
+                                                  CALL SETTINGS MENU
                                             ════════════════════════════════
 
                                                   1. Automatic redial
@@ -382,7 +403,7 @@
                                             to select an option.
 
                                             ════════════════════════════════
-                                                 📱 PHONE SETTINGS MENU
+                                                  PHONE SETTINGS MENU
                                             ════════════════════════════════
 
                                                   1. Language
@@ -420,7 +441,7 @@
                                             to select an option.
 
                                             ════════════════════════════════
-                                                📱 SECURITY SETTINGS MENU
+                                                 SECURITY SETTINGS MENU
                                             ════════════════════════════════
 
                                                   1. PINcode request
@@ -471,7 +492,7 @@
                                             to select an option.
 
                                             ════════════════════════════════
-                                                 📱 MUSIC SETTINGS MENU
+                                                 MUSIC SETTINGS MENU
                                             ════════════════════════════════
 
                                                   1. Music player
@@ -514,7 +535,7 @@
                                             to select an option.
 
                                             ════════════════════════════════
-                                                 📱 CLOCK SETTINGS MENU
+                                                 CLOCK SETTINGS MENU
                                             ════════════════════════════════
 
                                                   1. Alarm Clock
@@ -570,20 +591,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
             
             }
 
 
-
+}
 
 
 
