@@ -34,7 +34,7 @@
           13. Profiles
           14. Services
           15. SIM services
-
+          16. Exit
 
     ════════════════════════════════
         
@@ -259,9 +259,51 @@
             
       } 
 
-        case 3-> System.out.println("You are now on the Chat menu");
-    
+                case 3-> {
+
+        boolean stayinChatMenu = true;
+
+        while(stayinChatMenu){
+
+        String chatMenu = """ 
+        
+        You are now on the Chat Menu.
+        Please enter a number
+        to select an option.
+
+        ════════════════════════════════
+              CHAT MENU
+        ════════════════════════════════
+
+              1. Chat
+              10. Back
+
+        ════════════════════════════════
+            
+
+        """;  
+
+        System.out.println(chatMenu);
+
+        int chatMenuChoice = input.nextInt();
+
+        switch (chatMenuChoice) {
+
+        case 1-> System.out.println("You are now on the Chat menu");
+
+        case 10-> stayinChatMenu = false;
+
+        }
+
+        }
+        }
+
+
         case 4 -> {
+
+        boolean stayinCallRegister = true;
+
+        while(stayinCallRegister){
 
                             String showCallRegister = """ 
                             
@@ -274,6 +316,7 @@
                             ════════════════════════════════
 
                                   1. Missed Calls
+                                  10. Back
                          
                             ════════════════════════════════
                                 
@@ -287,12 +330,19 @@
                                      switch (showCallRegisterChoice) {
                                             
                                      case 1-> System.out.println("You are now on the Missed Call menu");
+
+                                     case 10-> stayinCallRegister = false;
+
                                          }
-                                       }
-            
+        }
+        }
 
 
-    case 5 -> {
+        case 5 -> {
+
+        boolean stayinTonesMenu = true;
+
+        while(stayinTonesMenu){
 
                             String showTonesMenu = """ 
                             
@@ -309,6 +359,7 @@
                                   3. Incoming call alert
                                   4. Message alert tone
                                   5. Keypad tones
+                                  10. Back
                          
                             ════════════════════════════════
                                 
@@ -321,12 +372,32 @@
  
                                      switch (showTonesMenuChoice) {
                                             
-                                     case 1-> System.out.println("You are now on the Ringing tone Menu");                              case 2-> System.out.println("You are now on the Ringing volume menu");                              case 3-> System.out.println("You are now on the Incoming call alert menu");                        case 4-> System.out.println("You are now on the Message alert tone menu");                         case 6-> System.out.println("You are now on the Keypad tones menu");                              case 7-> System.out.println("You are now on the Vibrating alert menu");                              case 8-> System.out.println("You are now on the Screen saver menu");
+                                     case 1-> System.out.println("You are now on the Ringing tone Menu");
+
+                                     case 2-> System.out.println("You are now on the Ringing volume menu");
+
+                                     case 3-> System.out.println("You are now on the Incoming call alert menu");
+
+                                     case 4-> System.out.println("You are now on the Message alert tone menu");
+
+                                     case 6-> System.out.println("You are now on the Keypad tones menu");
+
+                                     case 7-> System.out.println("You are now on the Vibrating alert menu");
+
+                                     case 8-> System.out.println("You are now on the Screen saver menu");
+
+                                     case 10-> stayinTonesMenu = false;
+
                                          }
-                                       }
-    
+        }
+        }
+
 
         case 6 -> {
+
+        boolean stayinSettingsMenu = true;
+
+        while(stayinSettingsMenu){
 
                             String settingsMenu = """ 
                             
@@ -342,6 +413,7 @@
                                   2. Phone Settings
                                   3. Security Settings
                                   4. Restore factory settings
+                                  10. Back
                                   
                             ════════════════════════════════
                                 
@@ -399,7 +471,7 @@
                                             String phoneSettingsMenu = """ 
                                             
                                             You are now on the phone Settings Menu.
-                                            Please enter a number
+                                            Please enter a number 
                                             to select an option.
 
                                             ════════════════════════════════
@@ -474,17 +546,43 @@
                                          
                                       }
 
-                                   case 4-> System.out.println("You are now on the Restore Factory Settings menu");                                                
+                                   case 4-> System.out.println("You are now on the Restore Factory Settings menu");
+
+                                   case 10-> stayinSettingsMenu = false;
 
                                          }
-                                       }
+        }
+        }
 
 
+        case 7-> {
 
-         case 7-> System.out.println("You are now on the Call Divert menu"); 
-                      
-         case 8-> {
-                                        
+        boolean stayinCallDivertMenu = true;
+
+        while(stayinCallDivertMenu){
+
+        System.out.println("You are now on the Call Divert menu");
+
+        System.out.println("To go back, press 10");
+
+        int callDivertChoice = input.nextInt();
+
+        switch(callDivertChoice){
+
+        case 10-> stayinCallDivertMenu = false;
+
+        }
+
+        }
+        }
+
+
+        case 8-> {
+
+        boolean stayinMusicMenu = true;
+
+        while(stayinMusicMenu){
+
                                             String musicMenu = """ 
                                             
                                             You are now on the Music Settings Menu.
@@ -499,6 +597,7 @@
                                                   2. Radio
                                                   3. Recorder
                                                   4. Track list
+                                                  10. Back
                                             
                                             ════════════════════════════════
                                                 
@@ -514,20 +613,89 @@
                                       case 1-> System.out.println("You are now on the Music Player Menu");                         
                                       case 2-> System.out.println("You are now on the Radio menu");                            
                                       case 3-> System.out.println("You are now on the Recorder  menu");                       
-                                      case 4-> System.out.println("You are now on the Track List  menu");   
+                                      case 4-> System.out.println("You are now on the Track List  menu");
+
+                                      case 10-> stayinMusicMenu = false;
          
                                                       }                                         
                                     
-                                      }        
+                                      }
+
+        }
 
 
-    
-        case 9-> System.out.println("You are now on the Games"); 
-        case 10-> System.out.println("You are now on the Calculator");
-        case 11-> System.out.println("You are now on the Reminders");  
+        case 9-> {
+
+        boolean stayinGamesMenu = true;
+
+        while(stayinGamesMenu){
+
+        System.out.println("You are now on the Games");
+
+        System.out.println("To go back, press 10");
+
+        int gamesMenuChoice = input.nextInt();
+
+        switch(gamesMenuChoice){
+
+        case 10-> stayinGamesMenu = false;
+
+        }
+
+        }
+        }
+
+
+        case 10-> {
+
+        boolean stayinCalculatorMenu = true;
+
+        while(stayinCalculatorMenu){
+
+        System.out.println("You are now on the Calculator");
+
+        System.out.println("To go back, press 10");
+
+        int calculatorMenuChoice = input.nextInt();
+
+        switch(calculatorMenuChoice){
+
+        case 10-> stayinCalculatorMenu = false;
+
+        }
+
+        }
+        }
+
+
+        case 11-> {
+
+        boolean stayinRemindersMenu = true;
+
+        while(stayinRemindersMenu){
+
+        System.out.println("You are now on the Reminders");
+
+        System.out.println("To go back, press 10");
+
+        int remindersMenuChoice = input.nextInt();
+
+        switch(remindersMenuChoice){
+
+        case 10-> stayinRemindersMenu = false;
+
+        }
+
+        }
+        }
+
 
         case 12-> {
-                                        
+
+        boolean stayinClockMenu = true;
+
+        while(stayinClockMenu){
+
                                             String clockMenu = """ 
                                             
                                             You are now on the Music Settings Menu.
@@ -544,6 +712,7 @@
                                                   4. Stop watch
                                                   5. Countdown Timer
                                                   6. Auto update of date and time
+                                                  10. Back
 
                                             ════════════════════════════════
                                                 
@@ -561,46 +730,87 @@
                                       case 3-> System.out.println("You are now on the Date Settings  menu");                       
                                       case 4-> System.out.println("You are now on the Stopwatch menu");
                                       case 5-> System.out.println("You are now on the Countdown timer menu"); 
-                                      case 6-> System.out.println("You are now on the Auto update of date and time menu");      
+                                      case 6-> System.out.println("You are now on the Auto update of date and time menu");
+
+                                      case 10-> stayinClockMenu = false;
          
                                                       }                                         
                                     
-                                      }        
-
-
-
-
-
-        case 13-> System.out.println("You are now on the Profiles Menu"); 
-        case 14-> System.out.println("You are now on the Services Menu");
-        case 15-> System.out.println("You are now on the Sim Services Menu"); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            }
-
-
-}
-
-
-
+                                      }
 
         }
 
 
-       }
+        case 13-> {
+
+        boolean stayinProfilesMenu = true;
+
+        while(stayinProfilesMenu){
+
+        System.out.println("You are now on the Profiles Menu");
+
+        System.out.println("To go back, press 10");
+
+        int profilesMenuChoice = input.nextInt();
+
+        switch(profilesMenuChoice){
+
+        case 10-> stayinProfilesMenu = false;
+
+        }
+
+        }
+        }
+
+
+        case 14-> {
+
+        boolean stayinServicesMenu = true;
+
+        while(stayinServicesMenu){
+
+        System.out.println("You are now on the Services Menu");
+
+        System.out.println("To go back, press 10");
+
+        int servicesMenuChoice = input.nextInt();
+
+        switch(servicesMenuChoice){
+
+        case 10-> stayinServicesMenu = false;
+
+        }
+
+        }
+        }
+
+
+        case 15-> {
+
+        boolean stayinSimServicesMenu = true;
+
+        while(stayinSimServicesMenu){
+
+        System.out.println("You are now on the Sim Services Menu");
+
+        System.out.println("To go back, press 10");
+
+        int simServicesMenuChoice = input.nextInt();
+
+        switch(simServicesMenuChoice){
+
+        case 10-> stayinSimServicesMenu = false;
+
+        }
+
+        }
+        }
+
+
+                case 16-> running = false;
+
+        }
+    }
+
+}
+}
