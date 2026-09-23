@@ -1,0 +1,7 @@
+
+
+when "int number = 5" is executed, 5 is assigned to number and number becomes 5
+when "number = number + 3" is executed, 3 is added to the inital 5 and number becomes 5 + 3 which is 8. number is now 8
+when number = number * 2, is executed, number becomes 8 times 2 which is 16, number is now 16
+
+what will be printed out is 16.

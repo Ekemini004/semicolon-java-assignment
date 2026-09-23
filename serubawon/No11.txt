@@ -1,0 +1,3 @@
+it will not compile, because ypou are trying to print what does not exist.
+
+this does not exist because java executes from top to bottom. you would need to  declare, initalize  and assign a variable before you can call or refrence that variable. the former comes before the latter
