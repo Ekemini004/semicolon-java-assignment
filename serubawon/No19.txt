@@ -1,0 +1,1 @@
+if you try to print a variable before it has been assigned a value in java , it would cause a compilation error caused by no initlaization, it would literally say varaiable may have not been initialized. it doesnt know what age is so it practically doesnt exist in any stack.

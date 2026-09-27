@@ -1,0 +1,8 @@
+the difference between declaration and initalization of a variable is its value.
+
+at the point of declaration, a varaible doesnt yet have a value but at initlaization it has it firsts value which you can later reassign.
+
+for some languages declaration can happen without initialization, as in standalone. but in java declaration and initlazation typically occur at the same time.
+
+int age = 6; --- declaration and initialization. assignment is also lowkey hapoeneing her ebut uts just that, that first inital assignment is referred to as initalization
+age = 75; ----re assigment 

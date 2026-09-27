@@ -1,0 +1,3 @@
+String name = "Java" prints nothing, just stores the word java as a string type
+int length = name.length() counts the length of the string and stores it in  avaraible called length of data tyoe int
+System.out.println( name + "has" + length + "letters"); prints java has 3 letters
