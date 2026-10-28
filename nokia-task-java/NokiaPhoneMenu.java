@@ -712,7 +712,7 @@
                                                   4. Stop watch
                                                   5. Countdown Timer
                                                   6. Auto update of date and time
-                                                  10. Back
+                                                 10. Back
 
                                             ════════════════════════════════
                                                 

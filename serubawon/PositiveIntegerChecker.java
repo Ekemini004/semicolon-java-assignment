@@ -1,22 +1,29 @@
-import java.util.Scanner;
+public class PrimeChecker{
     
-public class PositiveIntegerChecker{
+    public static void main(String...arg){
+
+
+        int counter = 0;
+  
+
+        for(int index = 1; index <= 50; index++){
+
+            for(int divisor = 1; divisor <= index; divisor++) {
+
+                if(index % divisor == 0) counter++;
+
+            }      
     
-    public static void main(String [] args){
-    
-    Scanner input = new Scanner(System.in);
-
-    System.out.println("Enter any whole number:");
-
-    int userNumber = input.nextInt();
-       
-    if(userNumber > 0){
-
-        System.out.pritnln("Positive");
-
+            if(counter == 2) System.out.println(index);
+            counter = 0;
+   
         }
+
 
 
     }
 
+
 }
+
+  

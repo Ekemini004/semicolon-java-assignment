@@ -7,7 +7,7 @@ public static void main(String[] args){
     
    if(index % 3 == 0)
 
-    System.out.printf(index);
+    System.out.println(index);
         
     }
     

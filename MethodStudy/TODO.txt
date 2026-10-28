@@ -1,0 +1,20 @@
+inddex = 9
+
+
+9 => 2 - 8
+
+9 % 2 =
+
+-read chapter 3 python
+-read chpater 7 java -- methods -- i tried, didnt get somethings 
+-do serbuwan 20 more tasks
+-personal nested loop and loop practice 
+-personal method study n practice
+-read think like a programmer book
+-look at python for loop syntax -- i literally do not know it. even range.
+
+
+
+
+
+so much to do so little time 

@@ -5,8 +5,6 @@ public class Kata{
 public static void main(String [] args){
 
     Scanner input = new Scanner(System.in);
-    //int[] arrayOfNUmbers = new int[1];
-
 
     //System.out.println("Enter a number");
     //int userInputOne = input.nextInt();
@@ -146,51 +144,53 @@ public static void main(String [] args){
 
 
 
-    public static int factorsChecker(int firstNumber){
-            
-
-            int numberOfFactors = 0;
-            
-
-            for(int index = 1; index <= firstNumber; index++){
-        
-                if(firstNumber % index == 0){
-
-                numberOfFactors = numberOfFactors + 1;
-
-
-                //System.out.printf("%d, ", index,);
-
-                }
-            
+        public static int factorsChecker(int firstNumber){
+          
+                int numberOfFactors = 0;
                 
 
-
-             }
-
-            int[] arrayBasket = new int[numberOfFactors];
-            int arrayIndex = 0;
-            for(int index = 1; index <= firstNumber; index++){
-
-                    
-                if(firstNumber % index == 0){
-                   
-                arrayBasket[arrayIndex] = index;
-
-                arrayIndex++;               
-                
-                
-                }
-             }
-
+                for(int index = 1; index <= firstNumber; index++){
             
-            System.out.printf( "%n%d(factors: %s,)",numberOfFactors, Arrays.toString(arrayBasket) );
+                    if(firstNumber % index == 0){
+
+                    numberOfFactors = numberOfFactors + 1;
+                    }
+
+                 }
+
+                int[] arrayBasket = new int[numberOfFactors];
+                int arrayIndex = 0;
+                for(int index = 1; index <= firstNumber; index++){
+
+                        
+                    if(firstNumber % index == 0){
+                       
+                    arrayBasket[arrayIndex] = index;
+
+                    arrayIndex++;               
+                      
+                    }
+                 }
+
+                System.out.printf( "%n%d(factors: %s,)",numberOfFactors, Arrays.toString(arrayBasket) );
                
+               return numberOfFactors;
 
-           return numberOfFactors;
-        }
+               }
 
 
+        
+
+        
+        public static boolean isPerfectSquare(int numberOne){
+
+            
+            
+
+
+          }
+
+    
 
 
 
